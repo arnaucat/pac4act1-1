@@ -8,9 +8,7 @@ void setup() {
 
 
 void loop() {
-  //digitalWrite(LED_BUILTIN, HIGH);   // turn the LED on (HIGH is the voltage level)
-  //delay(1000);    // wait for a second
-    timenow = millis();
+   timenow = millis();
    while(millis() < timenow+periode){
      Serial.println("Hola1");
      digitalWrite(LED_BUILTIN, LOW);
@@ -21,7 +19,4 @@ void loop() {
     digitalWrite(LED_BUILTIN, HIGH);
     }
 
-  
-//  digitalWrite(LED_BUILTIN, LOW);    // turn the LED off by making the voltage LOW
-//  delay(1000);                       // wait for a second
 }
